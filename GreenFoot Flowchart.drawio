@@ -1,0 +1,200 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="s_Rvw7hloU-ydUAQqYy3">
+    <mxGraphModel dx="2838" dy="1091" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-1" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Game Start" vertex="1">
+          <mxGeometry height="80" width="90" x="110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-3" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Map is generated randomly based on 1 of 3 templates" vertex="1">
+          <mxGeometry height="60" width="130" x="280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="NPC Enemies are generated with randomized size &amp;lt; 5" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-5" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-6" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Initialize&amp;nbsp;&lt;div&gt;map = (Math.random() * 3) + 1;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="70" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-8" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-9" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Initialize&amp;nbsp;&lt;div&gt;numNPCs = 2&lt;/div&gt;&lt;div&gt;npc1 =&amp;nbsp;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;(Math.random() * &lt;/span&gt;&lt;span class=&quot;N1kUHb&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(250, 144, 62);&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;) + &lt;/span&gt;&lt;span class=&quot;N1kUHb&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(250, 144, 62);&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;npc2 =&amp;nbsp;&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;(Math.random() * &lt;/span&gt;&lt;span class=&quot;N1kUHb&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(250, 144, 62);&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;) + &lt;/span&gt;&lt;span class=&quot;N1kUHb&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(250, 144, 62);&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;undefined&quot; style=&quot;background-color: transparent; color: light-dark(#000000, var(--ge-light-color, #ffffff)); font-family: monospace; font-size: 14px; margin: 0px; border-bottom: 0px rgb(238, 240, 255);&quot;&gt;;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="270" x="20" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-11" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-12" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-63" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-13" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Add collision to walls based on template" vertex="1">
+          <mxGeometry height="60" width="120" x="95" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Player movement" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-15" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;labelPerimeter=1;rotation=90;" value="" vertex="1">
+          <mxGeometry height="100" width="50" x="315" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-16" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Down key = move south" vertex="1">
+          <mxGeometry height="80" width="80" x="245" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Up key = move north" vertex="1">
+          <mxGeometry height="80" width="80" x="355" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-18" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Right arrow key = Move east" vertex="1">
+          <mxGeometry height="80" width="80" x="465" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-19" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Left arrow key = move west" vertex="1">
+          <mxGeometry height="80" width="80" x="585" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="615" as="sourcePoint" />
+            <mxPoint x="495" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="495" y="615" as="sourcePoint" />
+            <mxPoint x="625" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-22" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QH5OfQaikT-NQ44qf9bG-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="625" y="615" as="sourcePoint" />
+            <mxPoint x="720" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-23" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;defaultLabelBackgroundColor=page;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="QH5OfQaikT-NQ44qf9bG-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="505" y="615" as="sourcePoint" />
+            <mxPoint x="600" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-24" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-65" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-25" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="On collision with wall = player dies" vertex="1">
+          <mxGeometry height="80" width="80" x="707.5" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-27" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Initialize player = 1;&lt;div&gt;player size = 1;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="95" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-29" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-32" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-66" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-30" parent="1" style="whiteSpace=wrap;html=1;" value="On collision with enemy.size &amp;gt; player.size = player dies" vertex="1">
+          <mxGeometry height="60" width="120" x="687.5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-31" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-34" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-67" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-32" parent="1" style="whiteSpace=wrap;html=1;" value="On player collision with self = player dies" vertex="1">
+          <mxGeometry height="60" width="120" x="687.5" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-33" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-36" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-34" parent="1" style="whiteSpace=wrap;html=1;" value="On enemy collision with self = enemy dies (npc pathing will include usecase, prioritize not dying over collecting orbs)" vertex="1">
+          <mxGeometry height="90" width="130" x="682.5" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-35" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-36" parent="1" style="whiteSpace=wrap;html=1;" value="On player or enemy collision with 5 orbs, size += 1" vertex="1">
+          <mxGeometry height="60" width="165" x="665" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-37" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-25" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="747.5" y="540" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-38" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Collision system" vertex="1">
+          <mxGeometry height="60" width="120" x="672.5" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-69" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-43" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="if numNPCs = 0&lt;div&gt;player wins!&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="1145" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-68" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-44" parent="1" style="whiteSpace=wrap;html=1;" value="On player collision with enemy size &amp;lt; player size = enemy dies&lt;div&gt;numNPCs =- 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="120" x="687.5" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-51" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Victory screen +&lt;div&gt;Return to title&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="910" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-70" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="QH5OfQaikT-NQ44qf9bG-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-53" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Collision detection decides a loss" vertex="1">
+          <mxGeometry height="60" width="120" x="880" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-54" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Loss screen + Return to title" vertex="1">
+          <mxGeometry height="60" width="120" x="1073" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-55" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.665;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="686.7800000000002" y="519.9000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-56" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.47;entryY=-0.019;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-57" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-60" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-58" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Enemy movement" vertex="1">
+          <mxGeometry height="60" width="120" x="-105" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-59" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-61" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-60" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Enemies will try to cut off players smaller than them, while avoiding colliding with themselves or walls" vertex="1">
+          <mxGeometry height="100" width="120" x="-105" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-61" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Enemies will also try to grab orbs to increase their own size" vertex="1">
+          <mxGeometry height="60" width="120" x="-105" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-62" edge="1" parent="1" source="QH5OfQaikT-NQ44qf9bG-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="QH5OfQaikT-NQ44qf9bG-64" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Scoreboard system" vertex="1">
+          <mxGeometry height="60" width="120" x="840" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="QH5OfQaikT-NQ44qf9bG-64" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Left side of screen will show a small &quot;scoreboard&quot; that shows players and enemies current sizes" vertex="1">
+          <mxGeometry height="120" width="120" x="840" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

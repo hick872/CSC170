@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="z2wOJ5WGEzkpS7BoBdDb">
+    <mxGraphModel dx="1372" dy="753" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="13PXwfCe4cUF7TbowQhM-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="player" vertex="1">
+          <mxGeometry height="160" width="140" x="150" y="80" as="geometry">
+            <mxRectangle height="30" width="70" x="150" y="80" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-2" parent="13PXwfCe4cUF7TbowQhM-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="size = int&lt;div&gt;act()&lt;/div&gt;&lt;div&gt;checkDirectionInput()&lt;/div&gt;&lt;div&gt;checkOrbCollision()&lt;br&gt;checkWallCollision()&lt;/div&gt;&lt;div&gt;updateTail()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-3" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="NPCs" vertex="1">
+          <mxGeometry height="160" width="140" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-4" parent="13PXwfCe4cUF7TbowQhM-3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="size = int&lt;div&gt;huntOrbsorPlayer()&lt;/div&gt;&lt;div&gt;avoidWalls()&lt;/div&gt;&lt;div&gt;checkOrbCollision()&lt;/div&gt;&lt;div&gt;checkWallCollision()&lt;br&gt;updateTail()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="scoreboard" vertex="1">
+          <mxGeometry height="104" width="140" x="540" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-6" parent="13PXwfCe4cUF7TbowQhM-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="playerSize = int" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-7" parent="13PXwfCe4cUF7TbowQhM-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="NPC1Size = int" vertex="1">
+          <mxGeometry height="26" width="140" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-8" parent="13PXwfCe4cUF7TbowQhM-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="npc2Size = int" vertex="1">
+          <mxGeometry height="26" width="140" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Orbs" vertex="1">
+          <mxGeometry height="70" width="140" x="150" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-10" parent="13PXwfCe4cUF7TbowQhM-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="orbs = int&lt;div&gt;act()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="140" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="TailSegment" vertex="1">
+          <mxGeometry height="52" width="140" x="150" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="13PXwfCe4cUF7TbowQhM-14" parent="13PXwfCe4cUF7TbowQhM-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="act()" vertex="1">
+          <mxGeometry height="26" width="140" y="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
