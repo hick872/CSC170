@@ -7,48 +7,62 @@ public class Player extends Actor
     private int score = 0;
     private List<int[]> history = new ArrayList<int[]>();
     private List<TailSegment> tail = new ArrayList<TailSegment>();
-    private int segmentSpacing = 8; // Distance between body segments
-    
-    // Movement velocity (dx, dy) to ensure strict single-direction control
-    private int dx = 4; // Start moving right by default
+    private int segmentSpacing = 8;
+
+    private int dx = 2;
     private int dy = 0;
 
     public void act()
     {
         checkDirectionInput();
-        
-        // Move continuously in the current locked direction
-        setLocation(getX() + dx, getY() + dy);
-        
-        // Record position history for the tail to follow
+
+        int prevX = getX();
+        int prevY = getY();
+        setLocation(prevX + dx, prevY + dy);
+
+        if (getOneIntersectingObject(Wall.class) != null)
+        {
+            setLocation(prevX, prevY);
+            dx = 0;
+            dy = 0;
+        }
+        else if (getWorld() instanceof BodyBlock)
+        {
+            ((BodyBlock) getWorld()).teleportIfAtEdge(this);
+        }
+
         history.add(0, new int[] {getX(), getY()});
-        
+
         checkOrbCollision();
         updateTail();
     }
-    
+
+    public int getSize()
+    {
+        return 1 + tail.size();
+    }
+
     private void checkDirectionInput()
     {
-        // Only allow switching directions if moving perpendicularly, preventing instant reverse into self
-        if (Greenfoot.isKeyDown("left") && dx == 0)
+        if (Greenfoot.isKeyDown("left") && dx <= 0)
         {
-            dx = -4;
+            dx = -2;
             dy = 0;
         }
-        else if (Greenfoot.isKeyDown("right") && dx == 0)
+        else if (Greenfoot.isKeyDown("right") && dx >= 0)
         {
-            dx = 4;
+            dx = 2;
             dy = 0;
         }
-        else if (Greenfoot.isKeyDown("up") && dy == 0)
+        else if (Greenfoot.isKeyDown("up") && dy <= 0)
         {
             dx = 0;
-            dy = -4;
+            dy = -2;
         }
-        else if (Greenfoot.isKeyDown("down") && dy == 0)
+        else if (Greenfoot.isKeyDown("down") && dy >= 0)
         {
             dx = 0;
-            dy = 4;
+            dy = 2;
         }
     }
 
@@ -59,8 +73,7 @@ public class Player extends Actor
         {
             getWorld().removeObject(orb);
             score++;
-            
-            // Growth: Spawn a new TailSegment and add it to the chain
+
             TailSegment newSegment = new TailSegment();
             getWorld().addObject(newSegment, getX(), getY());
             tail.add(newSegment);
@@ -74,7 +87,7 @@ public class Player extends Actor
         {
             history.remove(history.size() - 1);
         }
-        
+
         for (int i = 0; i < tail.size(); i++)
         {
             int historyIndex = (i + 1) * segmentSpacing;

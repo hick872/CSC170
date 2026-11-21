@@ -2,15 +2,13 @@ import greenfoot.*;
 
 public class Orbs extends Actor
 {
-    public void act()
+    public Orbs()
     {
-        // Check if touched by Player or NPC
-        Actor player = getOneIntersectingObject(Player.class);
-        Actor npc = getOneIntersectingObject(NPC.class);
-        
-        if (player != null || npc != null)
+        GreenfootImage img = getImage();
+        if (img != null)
         {
-            getWorld().removeObject(this);
+            img.scale(10, 10);
+            setImage(img);
         }
     }
 }
